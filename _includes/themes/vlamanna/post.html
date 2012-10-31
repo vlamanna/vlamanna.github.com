@@ -1,0 +1,51 @@
+<section class="section alt" id="promo">
+  <div class="container">
+    <div class="hero-unit">
+      <h1>Blog</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <article class="blog-post">
+          <header class="blog-header">
+            <h2>
+              {{ page.title }}
+              <small>{{ page.date | date_to_string }}.</small>
+            </h2>
+          </header>
+          <p>
+            {{ content }}
+          </p>
+          <footer class="blog-footer row-fluid">
+            <div class="span4 blog-categories">
+              <i class="icon-pushpin"></i>
+              {{ page.category }}
+            </div>
+            <div class="span4 blog-tags">
+              <i class="icon-tags"></i>
+			  {% for tag in page.tags %} 
+			    {% if forloop.first %}{{ tag }}{% else %}, {{ tag }}{% endif %}
+			  {% endfor %}
+            </div>
+          </footer>
+        </article>
+        <ul class="pager">
+          {% if page.previous %}
+			<li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="icon-chevron-left"></i> Previous</a></li>
+		  {% else %}
+			<li class="previous disabled"><a><i class="icon-chevron-left"></i> Previous</a></li>
+		  {% endif %}
+		  {% if page.next %}
+			<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next <i class="icon-chevron-right"></i></a></li>
+		  {% else %}
+			<li class="next disabled"><a>Next <i class="icon-chevron-right"></i></a>
+		  {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
