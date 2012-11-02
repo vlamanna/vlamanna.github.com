@@ -31,6 +31,9 @@
 			    {% if forloop.first %}{{ tag }}{% else %}, {{ tag }}{% endif %}
 			  {% endfor %}
             </div>
+            <div class="span4">
+              {% include JB/addthis %}
+            </div>
           </footer>
         </article>
         <ul class="pager">
