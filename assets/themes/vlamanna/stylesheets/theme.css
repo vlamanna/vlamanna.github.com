@@ -1265,3 +1265,7 @@ figure {
     background-image: url(../images/patterns/subtle_stripes_@2X.png);
   }
 }
+
+pre code {
+  font-size: 11px;
+}

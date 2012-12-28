@@ -11,7 +11,11 @@ description: ""
       <!-- Carousel items -->
       <div class='carousel-inner'>
         {% for post in site.posts limit:3 %}
+        {% if forloop.index0 == 0 %}
         <div class='active item'>
+        {% else %}
+        <div class='item'>
+        {% endif %}
           <div class='row-fluid'>
             <div class='hero-unit pull-center'>
               <h1>{{ post.title }}</h1>
