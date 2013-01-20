@@ -86,6 +86,12 @@ ul.icons li .icon-large:before {
   vertical-align: initial;
 }
 
+.icon-petprojektlabs {
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 .icon-glass:before {

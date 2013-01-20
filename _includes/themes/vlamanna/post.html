@@ -28,16 +28,16 @@
               <i class="icon-pushpin"></i>
               {{ page.category }}
             </div>
-            <div class="span4 blog-tags">
+            <div class="span4 blog-tags" style="float:right;text-align:right;">
               <i class="icon-tags"></i>
 			  {% for tag in page.tags %} 
 			    {% if forloop.first %}{{ tag }}{% else %}, {{ tag }}{% endif %}
 			  {% endfor %}
             </div>
-            <div class="span4">
-              {% include JB/addthis %}
-            </div>
           </footer>
+          <div style="text-align:center;">
+          	{% include JB/comments %}
+          </div>
         </article>
         <ul class="pager">
           {% if page.previous %}
