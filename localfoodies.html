@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>Local Foodies</title>
+		
+		<link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+		
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+		<![endif]-->
+ 
+ 		<script src="/assets/themes/vlamanna/javascripts/jquery.min.js" type="text/javascript"></script>
+		<script src="/assets/themes/vlamanna/javascripts/bootstrap.js" type="text/javascript"></script>
+ 		<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+ 		
+ 		<style>
+ 			#map { height: 100%; }
+ 		</style>
+ 		
+ 		<script type="text/javascript">
+ 			$(document).ready(function() {
+ 				var map = L.map('map').setView([45.492029, -73.57132], 13);
+ 				
+ 				L.tileLayer('http://{s}.tile.cloudmade.com/fdb4be1aa1cd4be79149a32dbf3bc8c4/997/256/{z}/{x}/{y}.png', {
+					attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+					maxZoom: 18
+				}).addTo(map);
+				
+				$('.navbar-search').on('submit', function() {
+					var marker1 = L.marker([45.503399,-73.561234]).addTo(map);
+					marker1.bindPopup('<b>Toqué!</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://www.restaurant-toque.com/en/" target="_blank">View website</a>');
+					var marker2 = L.marker([45.507971,-73.56617]).addTo(map);
+					marker2.bindPopup('<b>Brasserie T!</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://brasserie-t.com/" target="_blank">View website</a>');
+					var marker3 = L.marker([45.524871,-73.574238]).addTo(map);
+					marker3.bindPopup('<b>Au Pied de Cochon</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://www.restaurantaupieddecochon.ca/" target="_blank">View website</a>');
+					return false;
+				});
+ 			});
+ 		</script>
+	</head>
+	<body style="padding-top: 40px;">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">Local Foodies</a>
+					
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="I want to eat..." style="height:26px; width:350px;">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div id="map"></div>
+	</body>
+</html>
