@@ -29,17 +29,17 @@
 				
 				$('.navbar-search').on('submit', function() {
 					var marker1 = L.marker([45.503399,-73.561234]).addTo(map);
-					marker1.bindPopup('<b>Toqué!</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://www.restaurant-toque.com/en/" target="_blank">View website</a>');
-					var marker2 = L.marker([45.507971,-73.56617]).addTo(map);
-					marker2.bindPopup('<b>Brasserie T!</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://brasserie-t.com/" target="_blank">View website</a>');
+					marker1.bindPopup('<b style="margin-right:10px;">Toqué!</b><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br><br><i>Current Offers:</i><br>White Chocolate Millefeuille and Berries<br><br><a class="btn" href="http://www.restaurant-toque.com/en/" target="_blank">View website</a>');
+					var marker2 = L.marker([45.522646,-73.574345]).addTo(map);
+					marker2.bindPopup('<b style="margin-right:10px;">Les Chocolats de Chloé</b><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br><br><i>Current Offers:</i><br>Individual Chocolates<br><br><a href="http://youtu.be/ydWhp5atpSw" class="btn" target="_blank">View Video</a> <a class="btn" href="http://www.leschocolatsdechloe.com/" target="_blank">View website</a>');
 					var marker3 = L.marker([45.524871,-73.574238]).addTo(map);
-					marker3.bindPopup('<b>Au Pied de Cochon</b><br><br>User Rating: 5/5<br><br><a class="btn" href="http://www.restaurantaupieddecochon.ca/" target="_blank">View website</a>');
+					marker3.bindPopup('<b style="margin-right:10px;">Au Pied de Cochon</b><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><br><br><i>Current Offers:</i><br>Dark Chocolate Pot de Crème<br><br><a class="btn" href="http://www.restaurantaupieddecochon.ca/" target="_blank">View website</a>');
 					return false;
 				});
  			});
  		</script>
 	</head>
-	<body style="padding-top: 40px;">
+	<body style="padding-top: 40px;"> 
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -53,5 +53,6 @@
 		</div>
 		
 		<div id="map"></div>
+		
 	</body>
 </html>
