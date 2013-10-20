@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deriving a status from a log table"
+title: "Deriving a status"
 description: "Efficiently derive statuses from a log table in MySQL."
 category: "MySQL"
 tags: ["MySQL", "Join", "Logs"]
