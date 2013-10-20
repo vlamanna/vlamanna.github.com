@@ -7,8 +7,8 @@ tags: ["MySQL", "Join", "Logs"]
 ---
 {% include JB/setup %}
 
-We've been working hard lately at CakeMail on building our new version of the application. While building
-this new application, we have been rebuilding our API from scratch reviewing every queries. A set of these
+We've been working hard lately at CakeMail on building the new version of the application. While building
+this new version, we have been rebuilding the API from scratch, reviewing every queries. A set of these
 queries were to derive the status of a subscriber based on the logs of a campaign.
 
 
@@ -80,11 +80,9 @@ Here is the table structure we will be using for this post.
 Deriving this status is pretty simple. All we have to do is to select all the logs that have the
 action "sent". This would be the query we would use.
 
-```
-SELECT `subscriber_id`, 'sent'
-FROM `logs`
-WHERE `action` = 'sent'
-```
+    SELECT `subscriber_id`, 'sent'
+    FROM `logs`
+    WHERE `action` = 'sent'
 
 And to experience the best performance, we would have an index on the field "action".
 
