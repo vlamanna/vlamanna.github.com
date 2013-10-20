@@ -128,7 +128,8 @@ joins. Here would be a more optimal query.
 
     SELECT COALESCE(o.`subscriber_id`, c.`subscriber_id`) AS `subscriber_id`, 'opened'
     FROM `logs` o
-    FULL OUTER JOIN `logs` c ON (o.`subscriber_id` = c.`subscriber_id` AND c.`action` = 'click')
+    FULL OUTER JOIN `logs` c
+        ON (o.`subscriber_id` = c.`subscriber_id` AND c.`action` = 'click')
     WHERE o.`action` = 'open'
     GROUP BY `subscriber_id`
 
