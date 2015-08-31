@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hierarchical data in MySQL"
-description: "A simple approach on solving this complex problem of managing hierarchical data using MySQL."
+description: "A simple approach on solving this complex problem using MySQL."
 category: "MySQL"
 tags: ["MySQL", "Join", "Hierarchy"]
 ---
