@@ -17,9 +17,7 @@
               <small> - {{ page.date | date_to_string }}</small>
             </h2>
           </header>
-          <div style="text-align:center;" class="hidden-phone">
-          	{% include JB/ads %}
-          </div>
+          {% include JB/ads %}
           <p>
             {{ content }}
           </p>
@@ -38,9 +36,7 @@
           <div style="text-align:center;" class="hidden-phone">
           	{% include JB/ads %}
           </div>
-          <div style="text-align:center;">
-          	{% include JB/comments %}
-          </div>
+          {% include JB/comments %}
         </article>
         <ul class="pager">
           {% if page.previous %}
