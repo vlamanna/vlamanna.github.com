@@ -2,7 +2,7 @@
 layout: post
 title: "The quest of finding the right technology"
 description: "Or the quest of making the right technological choices?"
-category: "Software-Engineering"
+category: "Engineering"
 tags: ["Software Engineering", "Technology", "Best Practices"]
 ---
 {% include JB/setup %}
