@@ -1,7 +1,30 @@
 <div style="text-align:center;" class="hidden-phone hidden-tablet">
-  <script type="text/javascript"><!--
-  amazon_ad_tag = "or01-20"; amazon_ad_width = "728"; amazon_ad_height = "90"; amazon_ad_link_target = "new";//--></script>
-  <script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script>
+  <div>
+    <script type="text/javascript"><!--
+    amazon_ad_tag = "or01-20"; amazon_ad_width = "728"; amazon_ad_height = "90"; amazon_ad_link_target = "new";//--></script>
+    <script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script>
+  </div>
+  <div>
+    <div id="contentad80981"></div>
+    <script type="text/javascript">
+        (function(d) {
+            var params =
+            {
+                id: "0b96305e-e957-424d-a65a-9ab78ce0875c",
+                d:  "dmluY2VudGxhbWFubmEuY29t",
+                wid: "80981",
+                cb: (new Date()).getTime()
+            };
+    
+            var qs=[];
+            for(var key in params) qs.push(key+'='+encodeURIComponent(params[key]));
+            var s = d.createElement('script');s.type='text/javascript';s.async=true;
+            var p = 'https:' == document.location.protocol ? 'https' : 'http';
+            s.src = p + "://api.content.ad/Scripts/widget2.aspx?" + qs.join('&');
+            d.getElementById("contentad80981").appendChild(s);
+        })(document);
+    </script>
+  </div>
 </div>
 <div style="text-align:center;" class="hidden-phone hidden-desktop">
   <script type="text/javascript"><!--
