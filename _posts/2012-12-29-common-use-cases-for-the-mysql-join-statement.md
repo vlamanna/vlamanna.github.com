@@ -16,7 +16,6 @@ common use cases. The scenario will be the following:
 
 > *You have a list of users and track their activities. You want to build an internal reporting tool.*
 
-
 ### Table Structure
 
 Here is the table structure we will be using for these common use cases.
