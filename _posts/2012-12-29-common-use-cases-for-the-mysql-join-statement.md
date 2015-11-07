@@ -127,6 +127,7 @@ Here's the query:
 		AND a.`activity` = 'signup'
 
 Here's the results set:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -151,6 +152,7 @@ Here's the results set:
 </table>
 
 Here's the explain:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -208,6 +210,7 @@ Here's the query:
 		AND a2.`activity` = 'confirm_signup'
 		
 Here's the results set:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -236,6 +239,7 @@ Here's the results set:
 </table>
 
 Here's the explain:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -304,6 +308,7 @@ Here's the query:
 	WHERE a2.`id` IS NULL
 
 Here's the results set:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -332,6 +337,7 @@ Here's the results set:
 </table>
 
 Here's the explain:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -397,6 +403,7 @@ Here's the query:
 	GROUP BY u.`id`
 
 Here's the results set:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -421,6 +428,7 @@ Here's the results set:
 </table>
 
 Here's the explain:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -488,6 +496,7 @@ Here's the query:
 	GROUP BY u.`id`
 	
 Here's the results set:
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
