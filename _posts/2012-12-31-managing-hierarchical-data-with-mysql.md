@@ -177,6 +177,7 @@ will populate the lineage for the other users.
 	AND u2.`lineage` IS NOT NULL
 	
 The users table will look like the following once the lineage column has been populated.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -258,6 +259,7 @@ This case is quite simple. It can be done by executing the following query.
 	
 Basically, we simply join the users table on the referrer\_id and counting how many that
 gives for a single user. In this case, it will give the following result.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -283,6 +285,7 @@ for the specific user and grouping by the user id.
 	GROUP BY u.`id`
 	
 This would generate the following results.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -370,6 +373,7 @@ the lineage. It would give the following query.
 	WHERE u.`id` = '1'
 	
 In this case, it will give the following result.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -402,6 +406,7 @@ user by grouping the users.
 	GROUP BY u.`id`
 	
 This would generate the following results.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
@@ -480,6 +485,7 @@ following.
 	GROUP BY u.`id`
 	
 This would generate the following results.
+
 <table class="table table-bordered">
 	<tr>
 		<td><strong>id</strong></td>
